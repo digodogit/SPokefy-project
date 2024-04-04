@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Spokefy</title>
+    </head>
+    <body>
+        <header>
+            <h1>Spotify playlist from your Pokemon Team</h1>
+        </header>
+    {% block content %}
+        <h2>New post</h2>
+
+        <form method="POST" action="{% url 'criar-playlist' user %}">{% csrf_token %}
+            <button type="submit"  class="save btn btn-secondary">playlist</button>
+            <button type="submit" class="save btn btn-secondary">Save</button>
+        </form>
+   
+    {% endblock %}    
+    </body>
+</html>

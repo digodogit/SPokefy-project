@@ -1,0 +1,67 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SpoPkmn</title>
+        <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+        <link rel="stylesheet" href="{% static 'css/pkmn.css' %}">
+        <script src="{% static 'js/bootstrap.min.js' %}"></script>   
+    </head>
+    <body>
+
+    {% block content %}
+
+    <div class="container">
+        <div class="shadow-lg p-5 mb-3 bg-body-tertiary rounded">
+            <header class="d-flex flex-wrap justify-content-center py-5 mb-3 border-bottom">
+                <h1 >Spotify playlist from your Pokemon Team</h1>
+            </header>
+        </div>
+    </div>
+    
+    <div class="container"> 
+        <div class="row">
+            <div class="col">
+                <div class="card h-auto bg-dark p-0" id="playlist" >
+                    <h3 class="card-header w-auto border-light border-bottom">playlist: {{equipe_atual.nome_equipe }} </h3>
+                            <ul class="list-group bg-dark " style="overflow:hidden; overflow-y:scroll; height:535px; color:slategrey">
+                                {% for track in playlist.items %}
+                                <li class="list-group-item bg-dark rounded-pill mx-1 text-bg-info" id="listplay">
+                                    <h5 class="card-text p-0 mb-1 mx-2">{{ track.track.name }}</h5>
+                                    <div class="row mb-1 mx-1">
+                                    {% for artist in track.track.artists %}
+                                        <p class="card-text text-body-secondary p-1">{{ artist.name }} |</p> 
+                                    {% endfor %}
+                                    </div>
+                                </li>
+                                {% endfor %}
+                                </ul>        
+                    <div class="card-footer shadow-sm p-2 border-light border-top">
+                        <a href="{{ playlist_link }}" style="color: slategrey">Link para Playlist</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="row row-cols-1 row-cols-md-2 g-4">
+                {% for nome,valor in equipe_atual.pkmn_list.items %}
+                    <div class="col">
+                        <div class="shadow-sm mb-5 bg-body-tertiary rounded">
+                            <div class="card text-center" id="card-pkmn">
+                                <img src="{{valor.sprite}}" class="card-img-top mx-auto" style="width: 96px;height: 96px;;">
+                                <div class="card-body p-2">
+                                    <p class="card-text">{{nome}}</p>
+                                {% for atributo in valor.atributos %}
+                                    <span class="badge mx-1 text-bg-info rounded-pill" style="background-color: {{ atributo.cor }} ;">{{ atributo.genero }}</span>
+                                {% endfor %}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endblock %}    
+    </body>
+</html>

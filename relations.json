@@ -1,0 +1,72 @@
+{
+    "pkmntypes":{
+        "fire": {
+            "genero": "metal",
+            "cor": "orange"
+        },
+        "water": {
+            "genero": "pagode",
+            "cor": "aqua"
+        },
+        "grass":{
+            "genero": "reggae",
+            "cor": "green"
+        },
+        "fairy": {
+            "genero": "pop",
+            "cor": "thistle"
+        },
+        "dark": {
+            "genero": "metalcore",
+            "cor": "grey"
+        },
+        "ghost": {
+            "genero": "emo",
+            "cor": "darkslateblue"
+        },
+        "electric": {
+            "genero": "electronic",
+            "cor": "yellow"
+        },
+        "dragon": {
+            "genero": "metal",
+            "cor": "slateblue"
+        },
+        "flying":{
+            "genero": "reggae",
+            "cor": "skyblue"
+        },
+        "ground":{
+            "genero": "",
+            "cor": "sandybrown"
+        },
+        "ice":{
+            "genero": "",
+            "cor": "mediumturquoise"
+        },
+        "normal":{
+            "genero": "",
+            "cor": "silver"
+        },
+        "poison":{
+            "genero": "",
+            "cor": "indigo"
+        },
+        "psychic":{
+            "genero": "",
+            "cor": "mediumvioletred"
+        },
+        "rock":{
+            "genero": "",
+            "cor": "burlywood"
+        },
+        "steel":{
+            "genero": "",
+            "cor": "slategray"
+        },
+        "bug":{
+            "genero": "",
+            "cor": "olivedrab"
+        }
+        }
+}

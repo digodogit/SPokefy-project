@@ -1,0 +1,60 @@
+body    {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.788);
+}
+header  {
+    background-color: lightsteelblue;
+}
+.container h1,h3 {
+    color: whitesmoke;
+    font-family: 'Lobster';
+}
+label  {
+    color: whitesmoke;
+}
+.card#escolha-pkmn   {
+    background-color: rgba(26, 26, 26, 0.815);
+    margin-block-start: auto;
+    /* margin-inline-start: 33%; */
+    width: 30rem;
+}
+.card#login   {
+    background-color: rgba(26, 26, 26, 0.815);
+    margin-block-start: auto;
+    /* margin-inline-start: 33%; */
+    width: 30rem;
+}
+.card#card-pkmn  {
+    background-color: rgba(202, 202, 202, 0.445);
+    margin-block-start: auto;
+    /* margin-inline-start: 33%; */
+    width: 15rem;
+}
+.card-header    {
+    background-color: rgba(26, 26, 26, 0.815);
+}
+
+.card-footer    {
+    background-color: rgba(26, 26, 26, 0.815);
+    
+} 
+.btn {
+    color: whitesmoke;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    
+}
+
+input.form-control  {
+    margin-bottom: 15px;
+    
+}
+
+.badge  {
+    outline-color:lightslategrey;
+    outline-width: 2.5px;
+    outline-style:inset;
+}
+
