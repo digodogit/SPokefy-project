@@ -1,6 +1,6 @@
 {
-    "client_id": "f41729e4c9b6472298f0905a64d41251",
-    "client_secret": "a42959ced98d4c0f870c80fe6f1eeca7",
+    "client_id": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+    "client_secret": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
     "scopes": "playlist-modify-public playlist-modify-private playlist-read-collaborative playlist-read-private",
     "redirect_uri": "http://127.0.0.1:8000/spotify/redirect"
 }
